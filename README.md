@@ -55,17 +55,11 @@ streamlit run app.py
 
 ## 📁 Files
 ```
-01_dark_kitchen_optimizer/
 ├── dark_kitchen_optimizer.py   # Full pipeline (data → cluster → ILP → map)
 ├── app.py                      # Streamlit interactive dashboard
 ├── requirements.txt
 └── README.md
 ```
-
-## 💼 Interview Talking Points
-1. Why DBSCAN over K-Means for geo demand? *(handles noise, no need to pre-specify K)*
-2. Why ILP over greedy selection? *(global optimum, hard constraints on budget)*
-3. How would you scale this to 100,000 orders? *(sample/aggregate first, Lagrangian relaxation for large ILP)*
 
 ## 📈 Sample Output
 ```
